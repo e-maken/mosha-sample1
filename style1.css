@@ -1,0 +1,77 @@
+
+
+
+main{
+  height:2000px;
+}
+
+
+
+.contents{
+  display:grid;
+  gap:50px;
+ 
+  grid-template-columns:2fr 1fr;
+  
+}
+.main-contents{
+  background: tomato;
+  border-radius: 10px;
+}
+.side-contents{
+  background: gold;
+}
+
+/*フォーム*/
+#form4{
+  position:relative;
+  max-width:400px;
+  }
+  #sbox4{
+  height:50px;
+  padding:0 10px; 
+  position:absolute; 
+  left:0;
+  top:0; 
+  width:100%;
+  outline:0;
+  background:#eee;
+  }
+  #sbtn4{
+  height:50px;
+  width:50px;	
+  position:absolute; 
+  left:350px; 
+  top:0;
+  background:#7fbfff;
+  color:#fff;
+  border:none;
+  }
+  #sbtn4 .fa-search{
+  font-size:20px;	
+  position:absolute;
+  top:30%;
+  left:30%;	
+  }
+  #sbtn4:hover{
+  color:#888;
+  }
+.category {
+  position:relative;
+  top:100px;
+}
+
+
+@media (max-width: 960px) {  
+.contents{
+  display:grid;
+  gap:25px;
+}
+
+@media (max-width: 768px) {
+ 
+}
+
+@media (max-width: 481px) { 
+
+}

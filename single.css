@@ -1,0 +1,268 @@
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+
+body{
+  background:lightgray;
+}
+
+.contents{
+  width:100%;
+  max-width:1200px;
+  margin: 0 auto;  
+}
+.side-contents{
+  width:90%;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.header-home-name{
+  background: #6BB6FF;
+  padding:18px;
+  color:white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+.main-contents{
+  background:#fff;
+  margin-top: 30px;
+  height:2000px;
+  margin-bottom:30px;
+}
+
+
+#form1{
+  max-width:500px;
+  position: relative;
+  }
+  /*検索ボックス*/
+  #sbox1{
+  
+  outline:0;/*クリック時の青い枠線消す*/	
+  height:50px;/*検索ボックスの高さ*/	
+  padding:0 10px;/*テキスト位置調整*/	 
+  border-radius:2px 0 0 2px;/*検索ボックスの角を丸める*/		
+  background:#eee;/*検索ボックスの背景カラー*/	
+  width:100%;
+  }
+  /*検索ボタン*/
+  #sbtn1{
+  width:50px;/*検索ボタンの横幅*/ 
+  height:50px;/*検索ボタンの縦幅*/ 
+  
+  position: absolute;
+  top:0;
+  right:0;
+  
+  border-radius:0 2px 2px 0;/*検索ボタンの角を丸める*/ 
+  background:#7fbfff;/*検索ボタンの背景カラー*/ 
+  border:none;/*検索ボタンの枠線を消す*/ 
+  color:#fff;/*検索ボタンのテキストカラー*/ 
+  font-weight:bold;/*検索ボタンのテキスト太字*/ 
+  font-size:16px;/*検索ボタンのフォントサイズ*/ 
+  }
+  /*検索ボタンマウスオーバー時*/
+  #sbtn1:hover{
+  color:#666;/*検索ボタンマウスオーバー時のフォントカラー*/ 
+  }
+.side-category{
+  margin-top:30px;
+  background: #fff;
+  
+}
+.side-category>ul{
+  padding:20px;
+    
+  }
+
+  .side-category>ul>li>a{
+    text-decoration: none;
+    color:silver;
+    display:inline-block;
+    width:100%;
+    
+    padding:10px;
+  }
+  .side-category>ul>li>ul>li>a{
+    text-decoration: none;
+    color:silver;
+    display:inline-block;
+    width:100%;
+    padding-left: 30px;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  
+  .side-category ul li{
+    list-style-type: none;
+    
+  }
+  .side-category>ul>li>a:hover{
+    background: rgb(221, 220, 220);
+  }
+  .side-category>ul>li>ul>li>a:hover{
+    background: rgb(221, 220, 220);
+  }
+  .fa-chevron-right{
+   margin-right:10px;
+    
+  }
+.side-category .category-ttl{
+  padding:20px;
+  background: #C8E4FF;
+  color:#5BA9F7;
+}
+.side-category .category-ttl span{
+  margin-right:10px;
+}
+.side-info{
+  margin-top:30px;
+  background: #fff;
+}
+.side-image{
+  position: relative;
+  
+}
+.side-info .bg-image{
+  width:100%;
+}
+.side-image .ken{
+  width:90px;
+  border-radius: 50%;;
+  border: 2px solid white;
+  position: absolute;
+  top:-50px;
+  right:50%;
+  transform: translateX(50%);
+}
+.side-info section{
+  margin-top: 50px;
+  text-align: center;
+  padding:0 20px 20px 20px;
+}
+.fa-twitter{
+  font-size: 200%;
+  margin-right:20px;
+  background: #6BB6FF;
+  border-radius: 50%;
+  padding:10px;
+  color:white;
+  cursor:pointer;
+}
+.fa-youtube{
+  font-size: 200%;
+  background: #6BB6FF;
+  border-radius: 50%;
+  padding:10px;
+  color:white;
+  cursor:pointer;
+}
+.section-icon:hover{
+  opacity:0.8;
+}
+.side-contact{
+  margin-top:30px;
+  margin-bottom: 50px;
+}
+.s-contact{
+  color:#5BA9F7;
+  background: #C8E4FF;
+  padding:20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.s-mail{
+  display:block;
+  color:gray;
+  padding:10px 0 10px 0px;
+  cursor: pointer;
+}
+.side-mail{
+  padding:10px;
+  background:white;
+}
+.s-mail:hover{
+  background: rgb(228, 228, 228);
+  transition:all 1.0s;
+}
+footer{
+  background: #6BB6FF;
+  text-align: center;
+  color:white;
+  padding:10px;
+}
+.footer-home{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.footer-menus li a{
+  color:white;
+  text-decoration: none;
+  display:block;
+  font-size: 13px;
+  
+}
+.footer-menus li{
+  display:inline-block;
+ padding:10px;
+}
+.footer-menus{
+  margin-bottom:10px;
+}
+.home-icon{
+  margin-right: 5px;
+}
+.footer-copy{
+  font-size: 13px;
+}
+@media (min-width: 480px) { 
+  
+  
+  #form1{
+    max-width:300px;/*フォームのサイズ*/
+    position: relative;	
+    }
+  
+ }
+ @media (min-width: 576px) { 
+   .header-home-name{
+     font-size: 23px;
+   }
+  }
+
+
+ @media (min-width: 768px) { 
+   .contents{
+     display:grid;
+     gap:20px;
+     grid-template-columns: 2fr 1fr;
+   }
+   .contents{
+    width:90%;
+   
+  }
+   .side-contents{
+     margin-top:40px;
+   }
+   .header-ttl{
+     margin-top:10px;
+    
+   }
+   #form1{
+    max-width:1000px;    
+   
+    }
+  }
+ 
+ @media (min-width: 992px) { 
+  .contents{
+    gap:50px;
+  }
+ }
+
+ @media (min-width: 1200px) {  }
